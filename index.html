@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danny | Developer, Illustrator, Data Entry</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #171717; color: #fff;
+           font-family: system-ui, sans-serif; }
+    nav { display: flex; justify-content: space-between;
+          padding: 20px 24px; }
+    nav a { color: #fff; text-decoration: none; margin-left: 16px; }
+    .hero { min-height: 80vh; display: flex; flex-direction: column;
+            justify-content: center; padding: 24px; overflow: hidden; }
+    .hero p { margin: 0; color: #a3a3a3; font-size: 1.1rem; }
+    .big { font-size: 22vw; font-weight: 800; line-height: 1;
+           white-space: nowrap; animation: slide 12s linear infinite; }
+    @keyframes slide { from { transform: translateX(0); }
+                       to { transform: translateX(-50%); } }
+    .btns { margin-top: 24px; display: flex; gap: 12px; }
+    .btn { padding: 12px 20px; border-radius: 999px; text-decoration: none;
+           border: 1px solid #fff; color: #fff; }
+    .btn.fill { background: #fff; color: #171717; }
+    .social { margin-top: 24px; }
+    .social a { color: #a3a3a3; margin-right: 16px; }
+    section { padding: 40px 24px; max-width: 900px; margin: 0 auto; }
+    .grid { display: grid; gap: 16px; }
+    .card { background: #262626; padding: 20px; border-radius: 12px; }
+    .card a { color: #60a5fa; }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>Danny</strong>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <p>Hey, I'm</p>
+    <div class="big">DANNY DANNY DANNY DANNY DANNY DANNY</div>
+    <p>a developer, illustrator and data entry specialist</p>
+    <div class="btns">
+      <a class="btn fill" href="#projects">View Projects</a>
+      <a class="btn" href="#">Resume</a>
+    </div>
+    <div class="social">
+      <a href="https://github.com/immortaldon25-png">GitHub</a>
+    </div>
+  </div>
+
+  <section id="services">
+    <h2>What I do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Application creation</h3>
+        <p>Websites and web apps built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Illustration</h3>
+        <p>Custom illustrations and visuals for brands and projects.</p>
+      </div>
+      <div class="card">
+        <h3>Data entry</h3>
+        <p>Fast, accurate data entry and spreadsheet organization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Click Counter</h3>
+        <p>My first JavaScript project, built from my phone.</p>
+        <a href="https://immortaldon25-png.github.io/my-first-site">Live demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Add your email here.</p>
+  </section>
+</body>
+</html>
